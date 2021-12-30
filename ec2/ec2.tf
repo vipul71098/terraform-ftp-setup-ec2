@@ -8,7 +8,7 @@ resource "aws_instance" "ec2_example" {
 user_data = <<EOF
    sudo apt update
    sudo apt install vsftpd
-   sudo cp vsftpd.conf //etc/
+   sudo cp vsftpd.conf /etc/
    sudo systemctl restart vsftpd
    sudo ufw allow 20:21/tcp
    sudo ufw allow 30000:31000/tcp
